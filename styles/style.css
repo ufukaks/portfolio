@@ -1,0 +1,309 @@
+/* GOOGLEDEN FONT ÇEKMEK İÇİN */
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&family=Montserrat:wght@100;200;300;400;500;600&family=Open+Sans:wght@400;500;600;700&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*yapılan her şey hizalama yapar*/
+    text-decoration: none; /*Altı çizikleri yok eder*/
+    list-style: none; /*li'nni başıodaki noktaları noktaları yok eder*/
+}
+
+/*import ettiğimiz google fontlarını buraya css kuralını yazdık*/
+body{
+    font-family: 'Kadwa', serif; 
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+/*Scroll yavaş yavaş geçiyor*/
+html{ 
+    scroll-behavior: smooth;
+}
+/* HEADER START */
+header{
+    background-color: rgba(43, 21, 63, 0.7);
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    border-bottom: 1px solid #fff;
+}
+.navbar{
+    display: flex;/*Yazıları yan yana aldı*/
+    align-items: center;/*Dikeyde ortalama yaptı*/
+    width: 80%;
+    margin: 2px auto;
+    padding: 10px 0;
+    justify-content: space-between;/*logoyu ve lideki yazıları ayırdı*/
+}
+.navlink li a{
+    color: #fff;
+    padding: 5px 15px;
+    margin-left: 15px;
+    border-radius: 5px;
+    transition: all .8sn ease-in-out /*Yumuşak geçişler için kullanılır*/
+
+}
+.navlink li a:hover{
+    background-color: #24caac;
+
+
+}
+
+.logo h2 a{
+    color:#fff
+}
+.navlink{
+    display: flex;
+}
+/* HEADER END */
+/* SECTİON BOLUMU */
+section{
+    padding: 100px 0;
+    background-color: #122E44;
+
+}
+/*HOME SECTİON START*/
+img{
+    width: 100%;
+}
+.home{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;   /*Resimle yazıyı ayırdı*/ 
+    margin: 0 auto;
+    width: 80%;
+    color: #fff;
+    
+}
+.home_child{
+    flex-basis: 45%; /*yatay olarak contanierda ne kadar yer kapladığını verebiliyoruz. Birden fazla resim olsaydı otomatikmen yan yana gelecekti.*/
+}
+.home_child h1{
+    color: #24caac;
+    font-size: 50px;
+}
+.span{
+    color: #df376e;
+}
+.home_child p{
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.btn{
+    background-color: #24caac;
+    padding: 12px 40px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: large;
+    border: 1px solid #fff;
+    
+
+}
+.btn:hover{
+    cursor: pointer; /*üzerine gelince pointer oluşuyor*/
+    background-color: transparent; /*arka plan ana rengi alıyor*/
+    letter-spacing: 1px;
+    transition: all .6s ease-in-out;
+}
+/*HOME SECTİON END*/
+
+
+/*SOFTWARE SECTİON START */
+.software_title{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 50px;
+    position: relative;
+    transition: all .5s ease-in-out;
+}
+.software_title:hover{
+    background-color: #24caac;
+    transition: all .5s ease-in-out;
+ }
+ .software{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+ }
+
+
+.software_child{
+    color: #fff;
+    background-color: #01101a;
+    flex-basis: 30%;
+    padding: 25px 20px;
+    text-align: center;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+.software_child:hover{
+    border: 1px solid #24caac;
+    transition: all .5s ease-in-out;
+
+}
+.software_child .icon{
+    color: #24caac;
+    font-size: 25px;
+}
+.software_child h3 {
+    font-size: 20px;
+}
+ /*SOFTWARE SECTİON END */
+  /*CERTİFİCATE SECTİON START */
+.certificate_title{
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 50px;
+    position: relative;
+    transition: all .5s ease-in-out;
+}
+.certificate_title:hover{
+    background-color:#24caac
+}
+.certificate{
+    display: flex;
+    flex-wrap: wrap; /*büyüdüğü zaman otomatik aşağı geçer. yeni satır ya da sutunda sıralanıyor.*/
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.certificate_child{
+    flex-basis: 24%;
+    color: #fff;
+    padding: 20px 10px;
+    border: 1px solid transparent;
+    transition: all .5s ease-in-out;
+    border-radius: 5px;
+}
+.certificate_child:hover{
+    border: 1px solid #24caac;
+}
+.detail{
+    display: flex;
+    justify-content: space-between;
+}
+.certificate_child .detail ul{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+}
+.certificate_child .detail ul li{
+    color: gold;
+}
+ /*CERTİFİCATE SECTİON END */
+  /*SUCCESS SECTİON START */
+.success_title{
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+    transition: all .5s ease-in-out;
+
+}
+.success_title:hover{
+    background-color: #24caac;
+}
+.success{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.success_child{
+    flex-basis: 40%;
+}
+.success_child img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;/*resim boyutu eğer çerçeveyi aşarsa kenddini çerçveye göre kırp*/
+}
+.success_child2{
+    flex-basis: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+}
+.single_detail{
+    flex-basis: 40%;
+    padding: 40px 30px;
+    color: #fff;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+.single_detail:hover{
+    transform: scale(1.05); /*mouse üstüne geldiği zaman büyüme yapar*/
+}
+.sd1{
+    background-color: #eaa022;
+    margin-bottom: 20px;
+}
+.sd2{
+    background-color: #e91e62;
+    margin-bottom: 20px;
+
+}
+.sd3{
+    background-color: #24caac;
+    margin-bottom: 20px;
+}
+.sd4{
+    background-color: #2e363e;
+    margin-bottom: 20px;
+}
+
+
+
+/*SUCCESS SECTİON END */
+
+.contact_title{
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    transition: all .5s ease-in-out;
+}
+.contact_title:hover{
+    background-color: #24caac;
+    text-decoration: underline;
+}
+.form{
+    text-align: center;
+    background-color: transparent;
+    
+}
+input[type=text],textarea{
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: all .5s ease-in-out;
+}
+input[type=text]:hover{
+    border: 5px groove #df376e;
+}
+textarea:hover{
+    border: 5px groove #df376e;
+}
+input[type=button]{
+    width: 10%;
+    padding: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: all .5s ease-in-out;
+
+}
+input[type=button]:hover{
+    background-color: transparent;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
